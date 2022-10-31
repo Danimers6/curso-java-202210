@@ -10,10 +10,6 @@ public class Asignatura {
 		this.nombreAsig = nombreAsig;
 		this.notaAsig = notaAsig;
 	}
-	
-	public Asignatura() {
-		super();
-	}
 
 	public String getNombreAsig() {
 		return nombreAsig;
@@ -26,6 +22,12 @@ public class Asignatura {
 	}
 	public void setNotaAsig(int notaAsig) {
 		this.notaAsig = notaAsig;
+	}
+
+	@Override
+	public String toString() {
+		return "Asignatura [nombreAsig=" + nombreAsig + ", notaAsig=" + notaAsig + ", getNombreAsig()="
+				+ getNombreAsig() + ", getNotaAsig()=" + getNotaAsig() + "]";
 	}
 	
 	
